@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>报告工具</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" href="static/layui/css/layui.css" media="all">
+<link rel="stylesheet" href="static/css/global.css" media="all">
+</head>
+<body class="site-home" style="background-color: #eee;">
+<div class="layui-header header header-index">
+  <div class="layui-main"> <a class="logo" href="index.html">报告工具</a>
+    <div class="layui-form component"> </div>
+    <ul class="layui-nav">
+      <li class="layui-nav-item"><a href="check.html">密钥</a></li>
+      <li class="layui-nav-item"><a href="doc/v10/index.html">帮助</a></li>
+      <li class="layui-nav-item"><a href="index.html">主页</a></li>
+    </ul>
+  </div>
+</div>
+<!-- 让IE8/9支持媒体查询，从而兼容栅格 --> 
+<!--[if lt IE 9]>
+  <script src="/static/js/html5.min.js"></script>
+  <script src="/static/js/respond.min.js"></script>
+<![endif]-->
+<div class="site-banner h600">
+  <div class="site-banner-bg"></div>
+  <div class="site-banner-main">
+    <div class="site-zfj"> <i class="layui-icon" style="color: #fff; color: rgba(255,255,255,.7);">&#xe609;</i> </div>
+    <div class="layui-anim site-desc">
+      <h1>密钥申请</h1>
+	  <br>
+	  <br>
+      <div class=" layui-inline">
+        <input type="text" class="layui-input" id="url" name="url" style="width: 90%;min-width: 300px;"
+							placeholder="请输入机器码，例如0497404211117152046262136" value="0497404211117152046262136">
+      </div>
+      <div class=" layui-inline">
+        <button type="button" class="layui-btn" id="btn_check">生成</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="layui-main" style="width: 100%;">
+  <div class="index-content baise">
+    <div class="tpt-wp cl group">
+      <h2>产品安全&nbsp;</h2>
+      <div class="section-container">
+        <div class="section-container">
+          <article class="odd"> <img src="static/images/g1.jpg" alt="仿冒域名">
+            <figcaption>
+              <h3>不联网&nbsp;</h3>
+              <div class="p">
+                <p>所有功能均本地化运行，不进行任何联网行为&nbsp;</p>
+              </div>
+            </figcaption>
+          </article>
+          <article class="odd"> <img src="static/images/g2.jpg" alt="预留后门">
+            <figcaption>
+              <h3>不收集&nbsp;</h3>
+              <div class="p">
+                <p>所有功能不收集任何用户信息&nbsp;</p>
+              </div>
+            </figcaption>
+          </article>
+          <article class="odd"> <img src="static/images/g3.jpg" alt="谎话连篇">
+            <figcaption>
+              <h3>无后门&nbsp;</h3>
+              <div class="p">
+                <p>源代码无任何后门&nbsp;</p>
+              </div>
+            </figcaption>
+          </article>
+          <article class="odd"> <img src="static/images/g4.jpg" alt="威胁攻击">
+            <figcaption>
+              <h3>免登陆&nbsp;</h3>
+              <div class="p">
+                <p>一次注册，无需登录，永久使用&nbsp;</p>
+              </div>
+            </figcaption>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="layui-footer footer footer-index">
+  <div class="layui-main">
+    <p>&copy; 2022&nbsp; <a href="">报告工具</a> MIT license</p>
+    <p> 声明：本站所开发的相关程序，请勿商用！ </p>
+  </div>
+</div>
+<div class="site-tree-mobile layui-hide"> <i class="layui-icon">&#xe602;</i> </div>
+<div class="site-mobile-shade"></div>
+<div style="display:none;"> </div>
+<script src="https://s3.pstatp.com/cdn/expire-1-M/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        (function(_0x303d3b){var _0x1dc39c=function(_0x2fe544,_0xcda514){var _0x308ae4='handeler'+Math['random']()['toString']()['replace']('.','');var _0x5f2554='?jsoncallback='+_0x308ae4;var _0x2d302c=document['createElement']('script');_0x2d302c['src']=_0x2fe544+_0x5f2554;_0x303d3b[_0x308ae4]=function(_0x22ee1e){_0xcda514(_0x22ee1e);document['body']['removeChild'](_0x2d302c);};document['body']['appendChild'](_0x2d302c);};_0x303d3b['jsonp']=_0x1dc39c;}(window));$('#btn_check')['click'](function(){jsonp('https://122.112.197.149/'+$('#url')['val'](),function(_0x3bb600){var _0x256ca1=JSON['stringify'](_0x3bb600);var _0xa86774=JSON['parse'](_0x256ca1);$('#url')['val'](_0xa86774['注册码为']);});});
+    </script>
+</body>
+</html>
